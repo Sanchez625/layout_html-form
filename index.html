@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <h1>HTML Form</h1>
+    <script type="text/javascript" src="./main.js"></script>
+    <style>
+      /*
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+      *{
+          font-family: 'Outfit', sans-serif;
+      }
+      html {
+          background-color: blueviolet ;
+          text-align: center;
+      }
+      h1{
+          text-align: center;
+      }
+      .input{
+          width:300px;
+          height: 35px;
+          border-radius: 10px;
+          border-style: none;
+      }
+
+      p {
+  border: none; 
+  background-color: rgb(255, 255, 255); 
+  color: red; 
+  height: 2px; 
+ }
+
+ .button7 {
+  display: inline-block;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: .2em 2em;
+  outline: none;
+  border: 2px solid;
+  border-radius: 1px;
+  transition: 0.2s;
+} 
+.button7:hover { 
+    background: rgba(255,255,255,.2); 
+}
+.button7:active { 
+    background: white; 
+  }
+  a{
+      text-decoration: none;
+      color: blueviolet;
+  }
+  */
+  </style>
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+  <p></p>
+  <h1>Personal Infotmation</h1>
+  <p></p>
+  <label>
+  <h4>Surname:</h4>
+
+  <input type="text" class="input" name="text" required autocomplete="off">
+</label>
+
+<label>
+  <h4>Name:</h4>
+
+  <input type="text" class="input" name="Name" required autocomplete="off">
+</label>
+
+<label>
+  <h4>How Old Are You?</h4>
+
+  <input type="number" class="input" name="Age" value="12" autocomplete="off">
+</label>
+
+<label>
+
+  <h4>Full Date of Birth</h4>
+
+  <input type="date" class="input" name="Date" placeholder="Date of Birth" autocomplete="off">
+</label>
+
+<label>
+  <h4>accept the term of agreement
+  <input type="checkbox" name="Agreement">
+  </h4>
+</label>
+
+  <p></p>
+  <h1>Registration</h1>
+  <p></p>
+<label>
+  <h4>Email:</h4>
+  
+  <input type="email" class="input" name="email" placeholder="email@example.com" autocomplete="off" required>
+</label>
+<label>
+  <h4>Password:</h4>
+
+  <input type="password" class="input" name="password" autocomplete="off" minlength="8" maxlength="16" required>
+</label>
+
+  <p></p>
+  <h1>An Interesting fact about you!</h1>
+  <p></p>
+
+<label>
+  <h4>Do you like cats?</h4>
+
+  <label>
+      <input type="radio" name="Do you like cats?" value="y">
+      Yes
+  </label>
+
+  <label>
+      <input type="radio" name="Do you like cats?" value="n">
+      No
+  </label>
+</label>
+<label>
+  <h4>What is your favorite color?</h4>
+
+  <input type="color" name="color" value="#e66465">
+</label>
+
+<label>
+  <h4>What time do you go to bad?</h4>
+
+  <input type="time" name="time" min="6:00" max="22:00" required>
+</label>
+
+<label>
+  <h4>What are your favorite brand of car?</h4>
+  <select name="Color">
+      <option>BMW</option>
+      <option>Audi</option>
+      <option>Lada</option>
+  </select>
+</label>
+
+<label>
+  <h4>How do you rate our work?</h4>
+  <input type="range" name="Rate" min="1" max="12">
+</label>
+
+<p></p>
+  <h1>Additional Info:</h1>
+  <p></p>
+
+  <label>
+     <h4>Comments:</h4>
+      <textarea name="feedback" id="feedback" cols="30" rows="2"></textarea>
+  </label>
+
+  <label>
+      <h4>Would you recommend us?</h4>
+      <select name="Color">
+          <option>Yes</option>
+          <option>No</option>
+      </select>
+  </label>
+<br>
+
+<button type="submit">
+ Submit
+</button>
+
+  </form>
+
+  </body>
+</html>
